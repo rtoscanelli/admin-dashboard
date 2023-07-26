@@ -14,32 +14,88 @@ body {
 }
 
 .header {
+    padding: 15px;
     grid-column: 2 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: auto 1fr / 2fr 1fr;
+    background-color: peachpuff;
 }
 
 .search {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    gap: 5%;
+}
+
+.search-icon {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
 }
 
 .search-bar {
-    width: 500px;
+    border: 0px;
+    border-radius: 20px;
+    flex: 1;
     height: 30px;
+    background-color: lightgrey;
 }
 
 .profile {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 5%
+}
+
+.profile > #notification-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+}
+
+.profile > .profile-icon {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: lightgrey;
+}
+
+.profile > p {
+    font-size: 1.3rem;
 }
 
 .welcome {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    gap: 1%;
+}
+
+.welcome > .profile-icon {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: lightgrey;
+}
+
+.salutation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.salutation > p {
+    font-size: 0.9rem;
+    text-align:  start;
+}
+
+.salutation #username {
+    font-size: 1.5rem;
+    text-align:  start;
 }
 
 .do-buttons {
@@ -49,8 +105,12 @@ body {
 }
 
 .do-buttons button {
-    width: 100px;
-    height: 30px;
+    border-radius: 50px;
+    width: 150px;
+    height: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: lightblue;
 }
 
 .sidebar {
