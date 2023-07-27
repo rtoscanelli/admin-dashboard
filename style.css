@@ -167,8 +167,8 @@ body {
 .main-content {
     padding: 15px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
     background-color: lightgrey;
 }
 
@@ -230,8 +230,56 @@ body {
     background-color: lightblue;
 }
 
-.annoucements-content .annoucement {
-    height: 100px;
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > h2 {
+    margin: 20px; 
+    text-align: start;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.announcements-content {
+    padding: 2rem;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.announcement:first-child {
+    padding: 0;
+    border-top: 0px;
+    padding-bottom: 1.5rem;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid lightgrey;
+}
+
+.announcement:last-child {
+    padding: 0;
+    padding-top: 1.5rem;
+}
+
+.announcement h3 {
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.announcement p {
+    font-size: 0.9rem;
+    text-align: start;
+    color: #0f0f0f;
 }
 
 .trending {
