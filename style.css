@@ -11,21 +11,27 @@ li {
     list-style: none;
 }
 
+@font-face {
+    font-family: my-font;
+    src: url(assets/Poppins-Regular.ttf);
+}
+
 body {
     height: 100vh;
     background-color: var(--background-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: my-font, 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 4fr;
 }
 
 .header {
-    padding: 15px;
+    padding: 30px;
     margin-bottom: 30px;
     grid-column: 2 / 3;
     display: grid;
     grid-template: auto 1fr / 2fr 1fr;
+    row-gap: 10px;
     background-color: var(--header-color);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
@@ -38,16 +44,14 @@ body {
 }
 
 .search-icon {
-    border-radius: 20px;
     width: 30px;
     height: 30px;
-    background-color: var(--background-color);
 }
 
 .search-bar {
     border: 0px;
     border-radius: 20px;
-    flex: 1;
+    width: 80%;
     height: 30px;
     background-color: var(--background-color);
 }
@@ -99,6 +103,7 @@ body {
 
 .salutation > p {
     font-size: 0.9rem;
+    font-weight: bold;
     text-align:  start;
 }
 
@@ -115,9 +120,9 @@ body {
 
 .do-buttons button {
     border: 0px;
-    border-radius: 50px;
+    border-radius: 20px;
     width: 150px;
-    height: 50%;
+    height: 45px;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
@@ -139,10 +144,9 @@ body {
 }
 
 .sidebar > .title > .icon {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    filter: invert(1);
 }
 
 .sidebar > .title > h1 {
@@ -168,10 +172,9 @@ body {
 }
 
 .sidebar li > .icon {
-    border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: #fff;
+    filter: invert(1);
 }
 
 .main-content {
@@ -240,8 +243,6 @@ body {
 .project .actions .icon {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
 }
 
 .announcements {
