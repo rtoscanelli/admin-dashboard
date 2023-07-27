@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     height: 100vh;
     background-color: #f5f5f5;
@@ -245,8 +249,6 @@ body {
 .announcements-content {
     padding: 2rem;
     border-radius: 0.5em;
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
 }
 
@@ -284,10 +286,38 @@ body {
 
 .trending {
     grid-column: 2 / 3;
-    display: grid;
 }
 
-div {
-    text-align: center;
+.trending h2 {
+    margin: 20px; 
+    text-align: start;
     font-size: 2rem;
+    color: #fff;
+}
+
+.trending-content {
+    padding: 2rem;
+    border-radius: 0.5em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li.trending {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+li.trending > .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+li.trending p.tag {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
