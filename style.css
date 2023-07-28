@@ -228,6 +228,7 @@ body {
 }
 
 .project p {
+    overflow: hidden;
     font-size: 1rem;
     color: #0f0f0f;
 }
