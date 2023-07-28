@@ -1,10 +1,10 @@
  * {
     margin: 0;
     padding: 0;
-    --accent-color: #31aa62;
-    --primary-color: #1e673b;
-    --background-color: #fbfefc;
-    --header-color: #bcebcf;
+    --accent-color: #ed2d22;
+    --primary-color: #447bf0;
+    --background-color: #ebf1ff;
+    --header-color: #fff;
 }
 
 li {
